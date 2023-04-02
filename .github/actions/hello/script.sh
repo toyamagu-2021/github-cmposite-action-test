@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello, ${TARGET}!."
+echo "Hello, ${TARGET}!"
