@@ -14,7 +14,7 @@ runs:
       shell: bash
       env:
         TARGET: ${{ inputs.target }}
-    - run: "${GITHUB_ACTION_PATH}/script.sh"
+    - run: "${GITHUB_ACTION_PATH}script.sh"
       shell: bash
       env:
         TARGET: ${{ inputs.target }}
