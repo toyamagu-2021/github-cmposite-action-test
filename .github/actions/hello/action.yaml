@@ -1,0 +1,16 @@
+name: Test
+description: Test composite action
+inputs:
+  target:
+    description: Who you want to greet.
+outputs:
+  target:
+    value: ${{ inputs.target }}
+    description: The person you greeted
+runs:
+  using: composite
+  steps:
+    - run: echo "Hello, ${TARGET}!"
+      shell: bash
+      env:
+        TARGET: ${{ inputs.target }}
